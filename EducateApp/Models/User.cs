@@ -8,12 +8,9 @@ namespace EducateApp.Models
         //дополнительные поля для каждого пользователя
         //для преподавателя могут понадобиться данные о ФИО
 
-        //сообщение об ошибке при валидации на стороне клиента
-        [Required(ErrorMessage = "Введите фамилию")]
-
-        //отображение Фамилия вместо LastName
+        [Required(ErrorMessage = "Введите фамилию")]   // сообщение об ошибке при валидации на стороне клиента
         [Display(Name = "Фамилия")]
-        public string LastName { get; set; }
+        public string LastName { get; set; }   //отображение Фамилия вместо LastName
 
         [Required(ErrorMessage = "Введите имя")]
         [Display(Name = "Имя")]
