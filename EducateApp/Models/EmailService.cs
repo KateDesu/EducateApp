@@ -24,7 +24,7 @@ namespace EducateApp.Models
                 await client.ConnectAsync("smtp.mail.ru", 465, true);   // SMTP — 465 (протокол шифрования SSL/TLS)
 
                 // почту дублируем из 14 строки, пароль для внешнего приложения нужно сгенерировать в почте mail.ru
-                await client.AuthenticateAsync("katedesu@mail.ru", "TBhbnBbf8uHQxuayamAB");    
+                await client.AuthenticateAsync("katedesu@mail.ru", "PgAd60NWNiG4tyTuyXew");    
                 await client.SendAsync(emailMessage);
 
                 await client.DisconnectAsync(true);
